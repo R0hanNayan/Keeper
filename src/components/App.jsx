@@ -3,6 +3,7 @@ import Note from "./Note";
 import Header from "./Header";
 import Footer from "./Footer";
 import notes from '../notes';
+import CreateArea from "./CreateArea";
 
 function App() {
     return (
@@ -11,10 +12,9 @@ function App() {
             {notes.map(noteItems => {
                 return (
                     <Note
-                        key={noteItems.key}
-                        title={noteItems.title}
-                        content={noteItems.content}
-
+                        key={1} 
+                        title="Note title" 
+                        content="Note content"
                     />);
             })}
             < Footer />
